@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt1DfFx-SpWOYAZXNujUZGnex2NhND1sVotQ&s" alt="Sorteador Logo">
+        </div>
+        <div class="content">
+            <h2>Sorteio do PID</h2>
+            <input type="number" id="quantityInput" value="1" min="1"> número
+            <br>
+            <span>entre</span>
+            <input type="number" id="minInput" value="1" min="1">
+            <span>e</span>
+            <input type="number" id="maxInput" value="100" min="1">
+            <br>
+            <button onclick="sortear()">SORTEAR AGORA!</button>
+            <button onclick="window.location.href='premios.html'">PRÊMIOS</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
